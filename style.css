@@ -1,0 +1,167 @@
+/* ========== Add Google Fonts ========= */
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Jost:wght@400;500&display=swap');
+
+/* ========= Reset Custom Css ========= */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+
+body{
+    height: 100vh;
+    background-color: #00203FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.trun{
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.trun span{
+    font-size: 2.2rem;
+    color: #edf6f9;
+    font-family: 'Jost', sans-serif;
+    text-transform: capitalize;
+    margin: 0 .5rem;
+}
+
+.trun .active{
+    background-color: #edf6f9;
+    color: #0d1321;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.box{
+    height: 70px;
+    width: 70px;
+    border: 1.5px solid #f8f32b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    border-radius: .5rem;
+    cursor: cell;
+    font-family: 'Akaya Kanadaka', cursive;    
+}
+
+.X{
+    color: #fe6d73;
+}
+
+.O{
+    color: #17c3b2;
+}
+
+h2{
+    font-family: 'Akaya Kanadaka', cursive;
+    font-size: 4rem;
+    letter-spacing: 1.1px;
+    color: #ADEFD1FF;
+}
+
+.box1, .box2, .box3{
+    border-top: none;
+}
+
+.box1, .box4, .box7{
+    border-left: none;
+}
+
+.box3, .box6, .box9{
+    border-right: none;
+}
+
+.box7, .box8, .box9{
+    border-bottom: none;
+}
+
+
+.disable{
+    pointer-events: none;
+}
+
+/* =========== Result SCREEN ========== */
+
+.result_screen{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.active{
+    display: flex;
+    opacity: 1;
+    pointer-events: visible;
+}
+
+.result_screen div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #edf6f9;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0px 0px 3px rgba(275, 275, 275, .5);
+}
+
+.result_screen h3{
+    font-family: 'Jost', sans-serif;
+    font-size: 2.3rem;
+    font-weight: 500;
+}
+
+.result_screen button{
+    background-color: #00203FFF;
+    color: #edf6f9;
+    font-family: 'Jost', sans-serif;
+    padding: .5rem 1.3rem;
+    font-size: 1.65rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    letter-spacing: 1.1px;
+    font-weight: 500;
+}
+
+.footer{
+    margin-top: 2rem;
+}
+
+.footer p{
+    color: #edf6f9;
+    font-family: 'Jost', sans-serif;
+    font-size: 2rem;
+}
+
+.footer p span{
+    font-family: 'Akaya Kanadaka', cursive;
+    color: #ADEFD1FF;
+    font-size: 2.2rem;
+}
